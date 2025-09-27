@@ -1,0 +1,38 @@
+/*
+* Course: Competitive Programming Sessional (CCE-2310)
+* Assignment: Codeforces ICPC Assiut University Community
+* Problem ID: Q
+* Author: Sultana Jahan Tahmina (ID:E243419)
+* Language/Version: GNU G++20 13.2 (64 bit, winlibs)
+* Codeforces Profile: https://codeforces.com/profile/hscsultana22
+* Date: 2025-09-27
+* Statement: 
+https://codeforces.com/group/MWSDmqGsZm/contest/219158/problem/Q
+*/
+
+
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    double X, Y;
+    cin >> X >> Y;
+
+    if (X == 0 && Y == 0)
+        cout << "Origem" << endl;
+    else if (X == 0 && Y!=0 )
+        cout << "Eixo Y" << endl;
+    else if (X!=0 && Y == 0)
+        cout << "Eixo X" << endl;
+    else if (X > 0 && Y > 0)
+        cout << "Q1" << endl;
+    else if (X < 0 && Y > 0)
+        cout << "Q2" << endl;
+    else if (X < 0 && Y < 0)
+        cout << "Q3" << endl;
+    else
+        cout << "Q4" << endl;
+
+    return 0;
+}
+
