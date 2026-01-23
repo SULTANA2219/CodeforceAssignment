@@ -11,35 +11,19 @@ https://codeforces.com/group/MWSDmqGsZm/contest/219158/problem/O
 */
 
 
-#include <bits/stdc++.h>
-#include <string>
+#include <iostream>
 using namespace std;
 
 int main() {
-    string X;
-    cin >> X;
+    int A, B;
+    char S;
 
-    int A = 0, B = 0;
-    char C;
+    cin >> A >> S >> B;
 
-    int i = 0;
-    while (i < X.size() && isdigit(X[i])) {
-        A = A * 10 + (X[i] - '0');
-        i++;
-    }
-
-    C = X[i++];
-    
-    while (i < X.size() && isdigit(X[i])) {
-        B = B * 10 + (X[i] - '0');
-        i++;
-    }
-
-    if (C == '+') cout << A + B << endl;
-    else if (C == '-') cout << A - B << endl;
-    else if (C == '*') cout << A * B << endl;
-    else if (C == '/') cout << A / B << endl;
+    if (S == '+') cout << A + B;
+    else if (S == '-') cout << A - B;
+    else if (S == '*') cout << A * B;
+    else if (S == '/') cout << A / B;
 
     return 0;
 }
-
